@@ -19,7 +19,7 @@
 
 // Environment Config
 #define MAX_MACHINE 20
-#define MEMORY_NODE_NUM 2
+#define MEMORY_NODE_NUM 1
 #define CPU_PHYSICAL_CORE_NUM 72  // [CONFIG]
 #define MAX_CORO_NUM 8
 
@@ -99,11 +99,11 @@ constexpr int64_t kPerThreadRdmaBuf  = rdmaBufferSize * define::GB / MAX_APP_THR
 constexpr int64_t kPerCoroRdmaBuf    = kPerThreadRdmaBuf / MAX_CORO_NUM;
 
 // Cache (MB)
-constexpr int kIndexCacheSize = 600;
+constexpr int kIndexCacheSize = 0;
 
 // KV
-constexpr uint32_t keyLen = 8;
-constexpr uint32_t simulatedValLen = 8;
+constexpr uint32_t keyLen = 32;
+constexpr uint32_t simulatedValLen = 64;
 constexpr uint32_t allocAlignLeafSize = ROUND_UP(keyLen + simulatedValLen + 8 + 2, ALLOC_ALLIGN_BIT);
 
 // Tree
