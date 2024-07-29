@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SMART: A High-Performance Adaptive Radix Tree for Disaggregated Memory
 
 This is the implementation repository of our *OSDI'23* paper: **SMART: A High-Performance Adaptive Radix Tree for Disaggregated Memory**.
@@ -185,4 +186,3 @@ If you use SMART in your research, please cite our paper:
   publisher = {{USENIX} Association},
   month = jul,
 }
-```
